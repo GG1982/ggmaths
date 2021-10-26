@@ -45,7 +45,6 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../images/equations-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
   position: relative;
 }
@@ -97,10 +96,10 @@ p {
   grid-gap: 1.5em;
   grid-column-gap: 1rem;
 
-  max-width: min(90%, 90em);
+  max-width: min(95%, 90em);
 
-  margin-inline: auto;
-  margin-block: 4em;
+  margin: 4em auto;
+  padding: 2em 0;
   /* min-height: 100vh; */
 
   line-height: 1.6;
@@ -633,7 +632,7 @@ input {
   }
 
   .card-con {
-  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
   .card-layout {
     color: #fff;
