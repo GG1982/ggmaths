@@ -43,7 +43,7 @@ p {
   text-transform: capitalize;
   color: #ddd;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../images/equations-2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/equations-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -426,6 +426,10 @@ p {
   border-radius: var(--border-radius);
   margin-bottom: 4em;
 }
+.tabs h3 {
+  text-transform: capitalize;
+  padding-right: 1em; /* To keep away from arrow for mobile */
+}
 .tabs p {
   font-size: 1.1rem;
 }
@@ -435,7 +439,6 @@ p {
   color: #fff;
   overflow: hidden;
 }
-
 .tab .tab-label {
   display: flex;
   justify-content: space-between;
@@ -613,13 +616,6 @@ input {
     width: 90%;
     text-align: center;
     margin-inline: auto;
-  }
-
-  .hero {
-    background: #fff;
-    color: #000;
-    margin-top: 10em;
-    height:30vh;
   }
   .hero h1 {
     font-size: 2.2em;
