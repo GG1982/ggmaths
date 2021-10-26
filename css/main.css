@@ -81,8 +81,7 @@ p {
   font-weight: 500;
 
   padding: 0.8em;
-  margin-block: 1.5em;
-  margin-inline: 1em;
+  margin: 1.5em 1em;
 
   background-color: var(--green);
 
