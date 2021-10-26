@@ -93,15 +93,14 @@ p {
 .card-con {
   display: grid;
   place-items: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); */
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   grid-gap: 1.5em;
   column-gap: 1.5rem;
 
-  max-width: max(75em, 70vw);
+  max-width: max(90em, 70vw);
 
   margin: 4em auto;
-  padding: 2em 0;
+  padding: 2em;
   /* min-height: 100vh; */
 
   line-height: 1.6;
@@ -119,7 +118,7 @@ p {
   color: #fff;
 
   padding: 5em 0 0;
-  max-width: min(30ch);
+  max-width: 30ch;
 
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -262,7 +261,7 @@ p {
   display: flex;
   flex-direction: column;
 
-  min-width: 30ch;
+  min-width: min(30ch, 90vw);
   min-height: max-content;
 
   padding-block: 1em;
@@ -603,6 +602,7 @@ input {
 
 }
 
+
 @media only screen and (max-width: 868px) {
   /* display content on mobile
     but not on desktop */
@@ -615,10 +615,16 @@ input {
     margin-inline: auto;
   }
 
+  .hero {
+    background: #fff;
+    color: #000;
+    margin-top: 10em;
+    height:30vh;
+  }
   .hero h1 {
-  font-size: 2.2em;
-  width: 90%;
-  margin: 0 auto;
+    font-size: 2.2em;
+    width: 90%;
+    margin: 0 auto;
   }
   .hero h2 {
     font-size: 1.5em;
@@ -633,14 +639,15 @@ input {
   }
   .hero .buttons a:last-child {
     /* Targets "review button" on home page */
-  margin-top: 0em;
+    margin-top: 0em;
   }
 
   .card-con {
-  grid-template-columns: repeat(1, minmax(150px, 1fr));
+    grid-template-columns: repeat(1, minmax(200px, 2fr));
   }
   .card-layout {
     color: #fff;
+    max-width: min(30ch, 90vw);
     box-shadow: 0 10px 10px -2px rgba(0,0,0,0.5);
   }
 
@@ -748,7 +755,6 @@ input {
   }
 
 }
-
 
 
 @media (prefers-reduced-motion: reduce)
