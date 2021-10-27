@@ -299,7 +299,7 @@ img {
   flex-direction: column;
 
   min-width: min(30ch, 90vw);
-  min-height: max-content;
+  min-height: calc(max-content + 1em);
 
   padding-block: 1em;
   margin-right: 0.5em;
