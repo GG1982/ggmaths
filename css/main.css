@@ -3,6 +3,28 @@
   --midnight: #2c3e50;
   --border-radius: 1em;
 }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.8em;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: var(--border-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(142 90% 25% / 1)
+}
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: var(--green) #fff;
+    scrollbar-width: thin;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -248,6 +270,13 @@ img {
   padding-right: 1em;
 }
 
+#content-desktop .wrapper {
+  max-width: 70em;
+  margin: 0 auto;
+}
+#content-desktop .test-title {
+  margin-top: 2em;
+}
 
 /* Mobile Testimonials */
 
@@ -392,7 +421,7 @@ img {
   border-radius: var(--border-radius);
 }
 .grid-subject figure:nth-of-type(2n+1) p {
-  width: 90%;
+  width: 80%;
   margin-left: 4em;
 }
 
@@ -403,7 +432,7 @@ img {
   border-radius: var(--border-radius);
 }
 .grid-subject figure:nth-of-type(2n) p {
-  width: 90%;
+  width: 80%;
 }
 
 
@@ -621,6 +650,11 @@ input {
     but not on desktop */
   #content-desktop {display: none;}
   #content-mobile {display: block;}
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0.4em;
+  }
   .title {
     font-size: 2em;
     width: 90%;
