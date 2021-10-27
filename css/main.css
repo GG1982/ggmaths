@@ -319,17 +319,17 @@ img {
 }
 .item p {
   padding-top: 2ch;
+  font-size: 1.1rem;
 }
 
 .item:nth-of-type(2n+1) {
   background-color: var(--midnight);
-  filter: brightness(1.15);
+  filter: brightness(1.2);
   color: #fff;
 }
 
 .item:nth-of-type(2n) {
   background-color: var(--midnight);
-  filter: brightness(0.85);
   color: #fff;
 }
 
