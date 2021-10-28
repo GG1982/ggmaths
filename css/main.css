@@ -657,10 +657,10 @@ input {
     height: 0.4em;
   }
   .title {
+    margin: 1em auto;
+    width: 80%;
+    padding: 0;
     font-size: 2em;
-    width: 90%;
-    text-align: center;
-    margin-inline: auto;
   }
   .hero h1 {
     font-size: 2.2em;
@@ -703,12 +703,12 @@ input {
     padding: 0;
  }
   .col-text h2 {
-  width: 100%;
-  text-align: center;
-  margin: 1em auto;
-  padding: 0;
+    width: 100%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0;
 
-  padding-top: 0;
+    padding-top: 0;
   }
   .col-text .buttons {
     padding-right: 0;
@@ -736,9 +736,8 @@ input {
   }
 
   .grid-subject-mobile h2 {
-    padding-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
 
     font-size: 1.5em;
     text-transform: capitalize;
@@ -746,7 +745,6 @@ input {
     position: relative;
 
     width: max-content;
-    max-width: 100%;
   }
 
   .grid-subject-mobile h2::before {
@@ -760,9 +758,8 @@ input {
 
 
   .grid-subject-mobile p {
-    padding-top: 2em;
+    margin: 2em auto;
     width: 80%;
-    margin: 0 auto;
 
     font-size: 1.1rem;
   }
