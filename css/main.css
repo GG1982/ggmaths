@@ -723,21 +723,26 @@ input {
   .grid-subject-mobile {
     display: grid;
     place-items: center;
+    align-items: center;
     grid-template-columns: repeat(1, minmax(300px, 2fr));
     grid-gap: 1.5em;
 
     max-width: min(90%, 90em);
 
-    margin-inline: auto;
-    margin-top: 1em;
-    margin-bottom: 4em;
+    margin: 1em auto 4em;
     /* min-height: 100vh; */
     line-height: 1.6;
   }
+  .grid-subject-mobile figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .grid-subject-mobile h2 {
-    margin: 0 auto;
-    width: 100%;
+    /* margin: 0 auto;
+    width: 100%; */
 
     font-size: 1.5em;
     text-transform: capitalize;
