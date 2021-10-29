@@ -1,1 +1,1 @@
-# ggmaths Website
+# ggmaths website
