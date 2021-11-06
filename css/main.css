@@ -203,7 +203,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2em;
+  gap: 3em;
 
   /* For Grid */
   /* place-items: center;
@@ -758,7 +758,7 @@ input {
   }
   .home .btn {
   padding: 0.2em 0.4em;
-  border: 1px solid var(--green);
+  border: 1px solid #F0FFF0;
   border-radius: var(--border-radius);
   }
 
