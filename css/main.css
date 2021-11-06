@@ -97,7 +97,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:linear-gradient(var(--midnight) 70%, #F0FFF0);
+  background:linear-gradient(var(--midnight) 75%, #F0FFF0);
 
   mix-blend-mode: multiply;
   /* opacity: 0.9; */
