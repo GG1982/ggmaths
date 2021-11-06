@@ -135,10 +135,6 @@ img {
   transition: 350ms ease-in-out;
 }
 
-.btn:hover::before {
-  width: 100%;
-  left: 0%;
-}
 
 
 /* HOME PAGE */
@@ -686,6 +682,11 @@ input {
     color: #fff;
     background-color: #000;
   }
+  .btn:hover::before {
+    width: 100%;
+    left: 0%;
+  }
+
 
   /* Card layout */
   .card-content {
