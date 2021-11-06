@@ -211,7 +211,7 @@ img {
   grid-gap: 1.5em;
   column-gap: 1.5rem; */
 
-  max-width: max(90em, 70vw);
+  max-width: max(95em, 70vw, 500px);
 
   margin: 4em auto;
   padding: 2em;
