@@ -117,12 +117,10 @@ img {
 .btn {
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff;
+  color: #ddd;
   width: max-content;
   font-size: clamp(1.125rem, 2.5vw + 0.5em, 2em);
   position: relative;
-
-
 }
 
 .btn::before {
@@ -136,6 +134,8 @@ img {
 
   transition: 350ms ease-in-out;
 }
+
+
 
 /* CARD LAYOUT */
 .card-con {
