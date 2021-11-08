@@ -183,7 +183,7 @@ img {
   color: #fff;
 
   padding: 5em 0 0;
-  max-width: min(30ch, 300px, 85vw);
+  max-width: min(30ch, 300px, 90vw);
 
   overflow: hidden;
 
