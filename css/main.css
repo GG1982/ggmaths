@@ -87,8 +87,8 @@ img {
   /* flex-grow: 1; */
   flex-shrink: 1;
   padding: 2em;
-  padding-left: min(6em, 10vw);
-  padding-top: min(20vh, 10rem);
+  padding-left: min(6em, 8vw);
+  padding-top: min(18vh, 10rem);
   position: relative;
 }
 
@@ -110,7 +110,7 @@ img {
   gap: 2.5em;
 }
 .home-btn a:first-child {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 
@@ -127,7 +127,7 @@ img {
 
 .btn::before {
   content: "";
-  height: 0.2em;
+  height: 0.1em;
   width: 0;
   position: absolute;
   bottom: -0.4em;
@@ -137,70 +137,10 @@ img {
   transition: 350ms ease-in-out;
 }
 
-
-
-/* HOME PAGE */
-.hero {
-  width: 100%;
-  height: 100vh;
-  /* position: fixed; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  text-transform: capitalize;
-  color: #ddd;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/equations-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  position: relative;
-}
-.hero-inner {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero h1 {
-  font-size: 3em;
-
-  margin: 0 auto 1em;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-
-  margin-block: 1em;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #000;
-  font-size: 1.5em;
-  font-weight: 500;
-
-  padding: 0.8em;
-  margin: 1.5em 1em;
-
-  background-color: var(--green);
-
-  border-radius: var(--border-radius);
-}
-
-
 /* CARD LAYOUT */
 .card-con {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
@@ -232,7 +172,7 @@ img {
   color: #fff;
 
   padding: 5em 0 0;
-  max-width: 30ch;
+  max-width: min(30ch, 300px, 75vw);
 
   overflow: hidden;
 
@@ -366,7 +306,26 @@ img {
 #content-desktop .test-title {
   margin-top: 2em;
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.button {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 500;
+
+  padding: 0.8em;
+  margin: 1.5em 1em;
+
+  background-color: var(--green);
+
+  border-radius: var(--border-radius);
+}
 /* Mobile Testimonials */
 
 .wrapper {
