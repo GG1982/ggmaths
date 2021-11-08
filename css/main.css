@@ -172,7 +172,7 @@ img {
   color: #fff;
 
   padding: 5em 0 0;
-  max-width: min(30ch, 300px, 75vw);
+  max-width: min(30ch, 300px, 85vw);
 
   overflow: hidden;
 
@@ -721,34 +721,13 @@ input {
   border-radius: var(--border-radius);
   }
 
-  .hero h1 {
-    font-size: 2.2em;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .hero h2 {
-    font-size: 1.5em;
-    width: 85%;
-    margin: 2em auto 1em;
-  }
-  .hero-inner .button {
-    font-size: 1.1rem;
-  }
-  .buttons {
-    flex-direction: column;
-  }
-  .hero .buttons a:last-child {
-    /* Targets "review button" on home page */
-    margin-top: 0em;
-  }
-
   .card-con {
     /* grid-template-columns: repeat(1, minmax(200px, 2fr)); */
   }
-  .card-layout {
+  /* .card-layout {
     color: #fff;
     max-width: min(30ch, 90vw);
-  }
+  } */
 
   /* PRO MATHS TUTORING */
 
