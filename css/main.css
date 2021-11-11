@@ -503,6 +503,7 @@ img {
 
 .grid-subject figure {
   display: contents;
+
 }
 .grid-subject img {
   width: 100%;
@@ -521,24 +522,26 @@ img {
 }
 
 .grid-subject figure:nth-of-type(2n+1) div {
-  border: 5px solid var(--green);
-  margin-left: -6em;
-  z-index: 1;
+  border: 3px solid var(--green);
+  /* margin-left: -6em; */
+  z-index: -1;
   border-radius: var(--border-radius);
 }
 .grid-subject figure:nth-of-type(2n+1) p {
   width: 80%;
-  margin-left: 4em;
+  margin: 0 auto;
+  /* margin-left: 4em; */
 }
 
 .grid-subject figure:nth-of-type(2n) div {
-  border: 5px solid var(--green);
-  margin-right: -6em;
-  z-index: 1;
+  border: 3px solid var(--green);
+  /* margin-right: -6em; */
+  z-index: -1;
   border-radius: var(--border-radius);
 }
 .grid-subject figure:nth-of-type(2n) p {
   width: 80%;
+  margin: 0 auto;
 }
 
 
