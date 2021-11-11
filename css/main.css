@@ -55,19 +55,7 @@ img {
   but not on mobile */
 #content-desktop {display: block;}
 #content-mobile {display: none;}
-.hero h1 {
-  font-size: clamp(3rem, 5vw + 0.5rem, 5rem);
-  color: #ddd;
-  margin-bottom: 1em;
-}
-.hero span {
-  color: var(--green);
-}
 
-.hero h2 {
-  font-size: clamp(1.8rem, 3vw + 0.5rem, 3rem);
-  color: #ddd;
-}
 
 .hero {
   display: flex;
@@ -76,6 +64,18 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   isolation: isolate;
+}
+.hero h1 {
+  font-size: clamp(3rem, 5vw + 0.5rem, 5rem);
+  color: #ddd;
+  margin-bottom: 1em;
+}
+.hero span {
+  color: var(--green);
+}
+.hero h2 {
+  font-size: clamp(1.8rem, 3vw + 0.5rem, 3rem);
+  color: #ddd;
 }
 
 .hero-intro {
@@ -89,18 +89,14 @@ img {
   padding-top: min(18vh, 10rem);
   position: relative;
 }
-
-.hero-intro::after {
+.hero-intro::before {
   content: "";
   position: absolute;
-  inset: -0;
+  inset: 0; /* top, right, bottom, left all 0 */
   z-index: -1;
   background: linear-gradient(var(--midnight) 85%, #F0FFF0);
   mix-blend-mode: multiply;
 }
-
-
-
 
 
 
@@ -758,8 +754,46 @@ input {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero h1 {
+    font-size: clamp(3rem, 5vw + 0.5rem, 5rem);
+    color: #ddd;
+    margin-bottom: 1em;
+  }
+  .hero span {
+    color: var(--green);
+  }
 
-@media only screen and (max-width: 780px) {
+  .hero h2 {
+    font-size: clamp(1.8rem, 3vw + 0.5rem, 3rem);
+    color: #ddd;
+  }
+
+  .hero {
+    display: flex;
+    min-height: 100vh;
+    background-image: url("../images/apple.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    isolation: isolate;
+  }
+
+  .hero-intro {
+    width: max(44%, 300px, 27rem);
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    padding: 2em;
+    padding-left: min(6em, 8vw);
+    padding-top: min(18vh, 10rem);
+    position: relative;
+    background:linear-gradient(var(--midnight) 85%, #F0FFF0);
+    opacity: 0.95;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   /* display content on mobile
     but not on desktop */
   #content-desktop {display: none;}
