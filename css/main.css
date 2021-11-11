@@ -775,6 +775,11 @@ input {
     padding: 0;
     font-size: 2em;
   }
+  .hero .btn {
+  padding: 0.2em 0.4em;
+  border: 1px solid #F0FFF0;
+  border-radius: var(--border-radius);
+  }
   .home .btn {
   padding: 0.2em 0.4em;
   border: 1px solid #F0FFF0;
