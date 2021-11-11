@@ -96,6 +96,7 @@ img {
   z-index: -1;
   background: linear-gradient(var(--midnight) 85%, #F0FFF0);
   mix-blend-mode: multiply;
+  -webkit-transform:translateZ(10px);
 }
 
 
@@ -401,16 +402,14 @@ img {
   flex-direction: column;
 
   min-width: min(30ch, 90vw);
-  min-height: calc(max-content + 1em);
 
-  padding-block: 1em;
+  padding: 1.5em 0;
   margin-right: 0.5em;
 
   border: 0.1em solid var(--green);
   border-radius: var(--border-radius);
   box-shadow: 0 10px 10px -2px rgba(0,0,0,0.5);
-
-
+  
   text-align: center;
 }
 
