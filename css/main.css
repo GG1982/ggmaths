@@ -60,7 +60,7 @@ img {
 .hero {
   display: flex;
   min-height: 100vh;
-  background-image: url('../images/apple.jpg');
+  background-image: url('../images/apple-min.png');
   background-repeat: no-repeat;
   background-size: cover;
 
