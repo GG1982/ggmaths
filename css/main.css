@@ -132,7 +132,7 @@ img {
 
   transform: scaleX(0);
   /* transform-origin: right; */
-  transition: transform 250ms ease-in;
+  transition: transform 500ms ease;
 }
 
 
